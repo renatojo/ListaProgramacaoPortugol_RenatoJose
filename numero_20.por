@@ -3,27 +3,38 @@ programa
 	
 	funcao inicio()
 	{
+		inteiro n, a = 2, i = 2
 
-		inteiro valor = 0, b = 1
+		escreva("Digite uma valor:\n")
+		leia(n)
+		escreva("Os número primos entre 1 e ", n, " são:\n")
 
-		enquanto (b <= 50) {
-			para (inteiro a = 1; a % 2 != 0 ; a++) {
-				valor += b * 2
-				escreva(valor, "\n")
-				b++
+		enquanto (a <= n) {
+
+			se (a % i == 0) {
+				se (a == i) {
+					escreva(a,"\n")
+					i = 2
+					a++
+				} senao {
+					i = 2
+					a++
+				}
+			} senao {
+				i++
 			}
 		}
+		
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 119; 
+ * @POSICAO-CURSOR = 155; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {n, 6, 10, 1}-{a, 6, 13, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
